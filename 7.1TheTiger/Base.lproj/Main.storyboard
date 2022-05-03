@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qqf-g7-sEW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="A5e-0q-wIn">
+            <objects>
+                <navigationController id="qqf-g7-sEW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ne9-je-CCE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cig-lf-svW" kind="relationship" relationship="rootViewController" id="b6n-W9-Izg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDw-IK-GoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-445" y="89"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bY9-Ls-XqD">
+            <objects>
+                <viewController id="cig-lf-svW" customClass="ViewController" customModule="__1TheTiger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8nO-gD-N4F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skn-SA-CvS">
+                                <rect key="frame" x="20" y="740" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Run"/>
+                                <connections>
+                                    <segue destination="DLS-ml-Qf3" kind="show" id="1Ev-xf-Cm0"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mn6-sO-yle">
+                                <rect key="frame" x="10" y="108" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cdj-Sg-HMu"/>
+                                </constraints>
+                                <string key="text">Tiger wakes up in the room. 
+
+You run or stay?</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-oO-YhC">
+                                <rect key="frame" x="20" y="794" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stay"/>
+                                <connections>
+                                    <segue destination="rRe-eh-wgE" kind="show" id="80N-KN-3LW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xdc-7w-m8v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Skn-SA-CvS" firstAttribute="leading" secondItem="xdc-7w-m8v" secondAttribute="leading" constant="20" id="7VB-xJ-rMZ"/>
+                            <constraint firstItem="Mn6-sO-yle" firstAttribute="centerX" secondItem="Skn-SA-CvS" secondAttribute="centerX" id="Bt8-ZH-Twd"/>
+                            <constraint firstItem="Mn6-sO-yle" firstAttribute="leading" secondItem="xdc-7w-m8v" secondAttribute="leading" constant="10" id="LiF-xK-xUJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Skn-SA-CvS" secondAttribute="bottom" constant="125" id="dDH-su-ZqD"/>
+                            <constraint firstItem="hbe-oO-YhC" firstAttribute="top" secondItem="Skn-SA-CvS" secondAttribute="bottom" constant="23" id="ftT-2E-Yrb"/>
+                            <constraint firstItem="Mn6-sO-yle" firstAttribute="top" secondItem="xdc-7w-m8v" secondAttribute="top" constant="20" id="fuJ-zU-Xga"/>
+                            <constraint firstItem="Skn-SA-CvS" firstAttribute="trailing" secondItem="hbe-oO-YhC" secondAttribute="trailing" id="lvD-lj-NmV"/>
+                            <constraint firstItem="Skn-SA-CvS" firstAttribute="leading" secondItem="hbe-oO-YhC" secondAttribute="leading" id="mUG-UL-pDW"/>
+                            <constraint firstItem="xdc-7w-m8v" firstAttribute="trailing" secondItem="Skn-SA-CvS" secondAttribute="trailing" constant="20" id="qLh-TY-g8H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="53D-We-cJS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUB-J5-PZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="88"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p89-Th-lqm">
+            <objects>
+                <viewController id="DLS-ml-Qf3" customClass="MYOAViewController" customModule="__1TheTiger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1jm-oX-6zF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-wN-2ds">
+                                <rect key="frame" x="20" y="740" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Run zig zag"/>
+                                <connections>
+                                    <segue destination="CqS-bM-SkN" kind="presentation" id="K3H-Lm-k14"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You run zig zag or direct?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ih1-wy-UK1">
+                                <rect key="frame" x="10" y="108" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6nr-yG-c38"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adb-Nj-clT">
+                                <rect key="frame" x="20" y="794" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Run direct"/>
+                                <connections>
+                                    <segue destination="963-Uc-gX7" kind="presentation" id="3g9-6l-ghT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="edG-Pm-c18"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="adb-Nj-clT" firstAttribute="top" secondItem="qxI-wN-2ds" secondAttribute="bottom" constant="23" id="JNw-ML-W5i"/>
+                            <constraint firstItem="qxI-wN-2ds" firstAttribute="trailing" secondItem="adb-Nj-clT" secondAttribute="trailing" id="JTe-bG-Jg7"/>
+                            <constraint firstItem="qxI-wN-2ds" firstAttribute="leading" secondItem="edG-Pm-c18" secondAttribute="leading" constant="20" id="PEF-Uy-ghy"/>
+                            <constraint firstItem="edG-Pm-c18" firstAttribute="trailing" secondItem="qxI-wN-2ds" secondAttribute="trailing" constant="20" id="PpV-Yn-fk4"/>
+                            <constraint firstItem="qxI-wN-2ds" firstAttribute="leading" secondItem="adb-Nj-clT" secondAttribute="leading" id="VZ8-Lu-2mq"/>
+                            <constraint firstAttribute="bottom" secondItem="qxI-wN-2ds" secondAttribute="bottom" constant="125" id="Y4g-qw-KYE"/>
+                            <constraint firstItem="Ih1-wy-UK1" firstAttribute="top" secondItem="edG-Pm-c18" secondAttribute="top" constant="20" id="Yjq-fy-mjm"/>
+                            <constraint firstItem="Ih1-wy-UK1" firstAttribute="centerX" secondItem="qxI-wN-2ds" secondAttribute="centerX" id="lBm-Et-tki"/>
+                            <constraint firstItem="Ih1-wy-UK1" firstAttribute="leading" secondItem="edG-Pm-c18" secondAttribute="leading" constant="10" id="v9i-3p-MfI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="x5n-uV-fLL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQF-Xc-m3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213" y="-421"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nnA-Da-XeI">
+            <objects>
+                <viewController id="rRe-eh-wgE" customClass="MYOAViewController" customModule="__1TheTiger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXP-b1-fao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2g-Qo-6bU">
+                                <rect key="frame" x="20" y="740" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stay smiling"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You stay smiling or shouting?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fgK-54-dyx">
+                                <rect key="frame" x="10" y="108" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="emo-3w-MBj"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tu-fB-AgN">
+                                <rect key="frame" x="20" y="794" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stay shouting"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IPw-yf-RQi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B2g-Qo-6bU" firstAttribute="leading" secondItem="1tu-fB-AgN" secondAttribute="leading" id="6mD-kT-Rwn"/>
+                            <constraint firstAttribute="bottom" secondItem="B2g-Qo-6bU" secondAttribute="bottom" constant="125" id="GSv-h5-XuB"/>
+                            <constraint firstItem="IPw-yf-RQi" firstAttribute="trailing" secondItem="B2g-Qo-6bU" secondAttribute="trailing" constant="20" id="Or7-cp-llJ"/>
+                            <constraint firstItem="B2g-Qo-6bU" firstAttribute="trailing" secondItem="1tu-fB-AgN" secondAttribute="trailing" id="V3R-6f-EYi"/>
+                            <constraint firstItem="fgK-54-dyx" firstAttribute="leading" secondItem="IPw-yf-RQi" secondAttribute="leading" constant="10" id="kh1-IR-CKW"/>
+                            <constraint firstItem="fgK-54-dyx" firstAttribute="top" secondItem="IPw-yf-RQi" secondAttribute="top" constant="20" id="nbJ-ta-TFO"/>
+                            <constraint firstItem="B2g-Qo-6bU" firstAttribute="leading" secondItem="IPw-yf-RQi" secondAttribute="leading" constant="20" id="t20-xw-c3T"/>
+                            <constraint firstItem="fgK-54-dyx" firstAttribute="centerX" secondItem="B2g-Qo-6bU" secondAttribute="centerX" id="vQZ-uH-8uw"/>
+                            <constraint firstItem="1tu-fB-AgN" firstAttribute="top" secondItem="B2g-Qo-6bU" secondAttribute="bottom" constant="23" id="xka-9D-oJJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zXw-jC-cpa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7V-Ag-3FR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="655"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cwR-Fh-eJb">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="CqS-bM-SkN" customClass="MYOAViewController" customModule="__1TheTiger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OnV-O6-Xv0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzz-SY-h8k">
+                                <rect key="frame" x="20" y="740" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hip Hop"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You sing hip hop or you are silent?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J1J-Bi-2Ns">
+                                <rect key="frame" x="10" y="64" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="apU-BI-SF8"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVX-2C-J3b">
+                                <rect key="frame" x="20" y="794" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stay silent"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d48-0K-sbo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zzz-SY-h8k" firstAttribute="leading" secondItem="tVX-2C-J3b" secondAttribute="leading" id="44Z-S3-dyj"/>
+                            <constraint firstItem="J1J-Bi-2Ns" firstAttribute="leading" secondItem="d48-0K-sbo" secondAttribute="leading" constant="10" id="KwH-Wa-Gf1"/>
+                            <constraint firstItem="Zzz-SY-h8k" firstAttribute="leading" secondItem="d48-0K-sbo" secondAttribute="leading" constant="20" id="Thq-Yd-jpS"/>
+                            <constraint firstItem="J1J-Bi-2Ns" firstAttribute="centerX" secondItem="Zzz-SY-h8k" secondAttribute="centerX" id="WpB-Zr-vez"/>
+                            <constraint firstItem="d48-0K-sbo" firstAttribute="trailing" secondItem="Zzz-SY-h8k" secondAttribute="trailing" constant="20" id="cpS-kL-ml6"/>
+                            <constraint firstItem="J1J-Bi-2Ns" firstAttribute="top" secondItem="d48-0K-sbo" secondAttribute="top" constant="20" id="phZ-to-huk"/>
+                            <constraint firstItem="tVX-2C-J3b" firstAttribute="top" secondItem="Zzz-SY-h8k" secondAttribute="bottom" constant="23" id="v3s-zx-Uzv"/>
+                            <constraint firstAttribute="bottom" secondItem="Zzz-SY-h8k" secondAttribute="bottom" constant="125" id="xPY-Dj-3dU"/>
+                            <constraint firstItem="Zzz-SY-h8k" firstAttribute="trailing" secondItem="tVX-2C-J3b" secondAttribute="trailing" id="ypY-1C-yY2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="85u-aP-0mw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKI-WI-9dq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2187" y="-781"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bKN-3P-FdA">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="963-Uc-gX7" customClass="MYOAViewController" customModule="__1TheTiger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8y0-4x-sok">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAF-y2-TkH">
+                                <rect key="frame" x="20" y="740" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You smile?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cAq-ll-TaE">
+                                <rect key="frame" x="10" y="64" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zna-sF-Sm6"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqj-T9-jvo">
+                                <rect key="frame" x="20" y="794" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="No"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tw4-ya-3vM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kAF-y2-TkH" secondAttribute="bottom" constant="125" id="19f-Is-uGe"/>
+                            <constraint firstItem="Tw4-ya-3vM" firstAttribute="trailing" secondItem="kAF-y2-TkH" secondAttribute="trailing" constant="20" id="6an-E8-GfP"/>
+                            <constraint firstItem="kAF-y2-TkH" firstAttribute="trailing" secondItem="fqj-T9-jvo" secondAttribute="trailing" id="H4d-kk-Pcc"/>
+                            <constraint firstItem="cAq-ll-TaE" firstAttribute="top" secondItem="Tw4-ya-3vM" secondAttribute="top" constant="20" id="HkJ-k7-ohO"/>
+                            <constraint firstItem="cAq-ll-TaE" firstAttribute="leading" secondItem="Tw4-ya-3vM" secondAttribute="leading" constant="10" id="RzN-PT-5Bl"/>
+                            <constraint firstItem="kAF-y2-TkH" firstAttribute="leading" secondItem="Tw4-ya-3vM" secondAttribute="leading" constant="20" id="S0E-Ev-NAP"/>
+                            <constraint firstItem="fqj-T9-jvo" firstAttribute="top" secondItem="kAF-y2-TkH" secondAttribute="bottom" constant="23" id="VTq-qb-JnJ"/>
+                            <constraint firstItem="cAq-ll-TaE" firstAttribute="centerX" secondItem="kAF-y2-TkH" secondAttribute="centerX" id="YBq-DW-OAW"/>
+                            <constraint firstItem="kAF-y2-TkH" firstAttribute="leading" secondItem="fqj-T9-jvo" secondAttribute="leading" id="gxd-sb-lgW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="goQ-T3-zIK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a53-6h-6gS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="-89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
