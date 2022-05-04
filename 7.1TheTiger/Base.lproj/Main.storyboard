@@ -95,7 +95,7 @@ You run or stay?</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Run zig zag"/>
                                 <connections>
-                                    <segue destination="CqS-bM-SkN" kind="presentation" id="K3H-Lm-k14"/>
+                                    <segue destination="isp-ht-mHF" kind="presentation" id="K3H-Lm-k14"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You run zig zag or direct?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ih1-wy-UK1">
@@ -191,16 +191,16 @@ You run or stay?</string>
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="CqS-bM-SkN" customClass="MYOAViewController" customModule="__1TheTiger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OnV-O6-Xv0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzz-SY-h8k">
-                                <rect key="frame" x="20" y="740" width="374" height="31"/>
+                                <rect key="frame" x="20" y="686" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Hip Hop"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You sing hip hop or you are silent?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J1J-Bi-2Ns">
-                                <rect key="frame" x="10" y="64" width="394" height="128"/>
+                                <rect key="frame" x="10" y="76" width="394" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="apU-BI-SF8"/>
@@ -210,7 +210,7 @@ You run or stay?</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVX-2C-J3b">
-                                <rect key="frame" x="20" y="794" width="374" height="31"/>
+                                <rect key="frame" x="20" y="740" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Stay silent"/>
                             </button>
@@ -233,7 +233,7 @@ You run or stay?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKI-WI-9dq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2187" y="-781"/>
+            <point key="canvasLocation" x="3097.1014492753625" y="-781.47321428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bKN-3P-FdA">
@@ -283,6 +283,24 @@ You run or stay?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a53-6h-6gS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2188" y="-89"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s5I-Lv-F5F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="isp-ht-mHF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="crz-6T-jmA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CqS-bM-SkN" kind="relationship" relationship="rootViewController" id="ugO-aD-8eq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRS-QQ-Ku1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186.9565217391305" y="-781.47321428571422"/>
         </scene>
     </scenes>
     <resources>
